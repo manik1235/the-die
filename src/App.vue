@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TheDie :faces="faces"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheDie from './components/TheDie.vue'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      faces: [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
   components: {
-    HelloWorld
+    TheDie
   }
 }
 </script>
